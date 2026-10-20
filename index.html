@@ -3,35 +3,131 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>MyShiftPay Privacy Policy</title>
+  <title>MyShiftPay — Earnings Tracker for Movers</title>
+  <meta name="description" content="MyShiftPay helps movers track shifts, hours, tips, and extras — and send a clear weekly report.">
   <style>
-    body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;max-width:760px;margin:0 auto;padding:48px 24px;line-height:1.6;color:#1d1d1f}h1{font-size:40px;margin-bottom:8px}h2{margin-top:32px}p{margin:12px 0}.muted{color:#6e6e73}footer{margin-top:48px;padding-top:20px;border-top:1px solid #ddd;color:#6e6e73}
+    :root {
+      --bg: #0a1628;
+      --card: #121c2a;
+      --text: #eef2f7;
+      --muted: #9aa7ba;
+      --accent: #5aa2ff;
+      --accent-dark: #1565d8;
+      --border: #1e2a3a;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    .container { max-width: 900px; margin: 0 auto; padding: 0 20px; }
+    header {
+      padding: 60px 0 40px;
+      text-align: center;
+    }
+    .logo {
+      font-size: 42px;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      margin: 0 0 12px;
+    }
+    .logo span { color: var(--accent); }
+    .tagline {
+      font-size: 20px;
+      color: var(--muted);
+      margin: 0 0 32px;
+    }
+    .btn {
+      display: inline-block;
+      background: var(--accent-dark);
+      color: white;
+      text-decoration: none;
+      padding: 14px 28px;
+      border-radius: 12px;
+      font-weight: 600;
+      transition: background 0.2s;
+    }
+    .btn:hover { background: var(--accent); }
+    section { padding: 48px 0; }
+    h2 {
+      font-size: 28px;
+      margin: 0 0 16px;
+    }
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 16px;
+      margin-top: 24px;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 24px;
+    }
+    .card h3 { margin: 0 0 8px; font-size: 18px; }
+    .card p { margin: 0; color: var(--muted); font-size: 15px; }
+    footer {
+      padding: 40px 0;
+      text-align: center;
+      color: var(--muted);
+      font-size: 14px;
+      border-top: 1px solid var(--border);
+    }
+    footer a { color: var(--accent); text-decoration: none; }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+      margin-top: 20px;
+    }
+    nav a { color: var(--muted); text-decoration: none; font-size: 15px; }
+    nav a:hover { color: var(--accent); }
   </style>
 </head>
 <body>
-  <h1>MyShiftPay Privacy Policy</h1>
-  <p class="muted">Last updated: October 3, 2026</p>
+  <header>
+    <div class="container">
+      <h1 class="logo">My<span>Shift</span>Pay</h1>
+      <p class="tagline">Track your shifts. See what you earned. Send a clear report.</p>
+      <a class="btn" href="https://apps.apple.com" target="_blank">Download on the App Store</a>
+      <nav>
+        <a href="support.html">Support</a>
+        <a href="privacy.html">Privacy Policy</a>
+      </nav>
+    </div>
+  </header>
 
-  <p>MyShiftPay is designed to help users track work shifts, hours, earnings, and related work information.</p>
+  <section>
+    <div class="container">
+      <h2>Built for movers</h2>
+      <p style="color: var(--muted); max-width: 600px;">MyShiftPay is a simple earnings tracker for movers and moving crews. Log your shifts, track tips and extras, and generate a clear weekly report you can send to your employer.</p>
 
-  <h2>Data Collection</h2>
-  <p>MyShiftPay does not collect, transmit, sell, or share personal data with the developer or third parties. Information entered into the app is stored locally on the user's device.</p>
+      <div class="features">
+        <div class="card">
+          <h3>Track every shift</h3>
+          <p>Log hours, role, rate, tips, and packing materials in seconds.</p>
+        </div>
+        <div class="card">
+          <h3>See your week</h3>
+          <p>Instantly see what you've earned so far this week.</p>
+        </div>
+        <div class="card">
+          <h3>Send a clear report</h3>
+          <p>Generate a clean summary and share it with one tap.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <h2>Third-Party Tracking and Advertising</h2>
-  <p>MyShiftPay does not use advertising networks or third-party tracking technologies.</p>
-
-  <h2>Data Storage</h2>
-  <p>App data is stored locally on the user's device and remains under the user's control. Removing the app or its local data may remove information stored by the app.</p>
-
-  <h2>Children's Privacy</h2>
-  <p>MyShiftPay does not knowingly collect personal information from children.</p>
-
-  <h2>Changes to This Policy</h2>
-  <p>This Privacy Policy may be updated if the app's features or data practices change. The current version will be published on this page.</p>
-
-  <h2>Contact</h2>
-  <p>For questions about this Privacy Policy, please contact the developer through the support information provided on the MyShiftPay App Store listing.</p>
-
-  <footer>© 2026 MyShiftPay</footer>
+  <footer>
+    <div class="container">
+      <p>© 2026 MyShiftPay</p>
+      <p><a href="support.html">Support</a> · <a href="privacy.html">Privacy Policy</a></p>
+    </div>
+  </footer>
 </body>
 </html>
