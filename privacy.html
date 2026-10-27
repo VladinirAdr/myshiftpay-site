@@ -4,49 +4,33 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>MyShiftPay Privacy Policy</title>
-  <style>
-    :root {
-      --bg: #0a1628;
-      --card: #121c2a;
-      --text: #eef2f7;
-      --muted: #9aa7ba;
-      --accent: #5aa2ff;
-      --border: #1e2a3a;
-    }
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.6;
-    }
-    .container { max-width: 760px; margin: 0 auto; padding: 48px 20px 64px; }
-    .brand { font-size: 34px; font-weight: 800; letter-spacing: -0.02em; margin: 0 0 8px; }
-    .brand span { color: var(--accent); }
-    h1 { font-size: 32px; margin: 0 0 8px; }
-    h2 { margin-top: 32px; font-size: 20px; }
-    p { margin: 12px 0; }
-    .muted { color: var(--muted); }
-    a { color: var(--accent); }
-    nav { margin-bottom: 24px; }
-    nav a { color: var(--muted); text-decoration: none; margin-right: 16px; font-size: 15px; }
-    nav a:hover { color: var(--accent); }
-    footer { margin-top: 48px; padding-top: 20px; border-top: 1px solid var(--border); color: var(--muted); font-size: 14px; }
-  </style>
+  <meta name="description" content="How MyShiftPay handles your data: everything stays on your iPhone.">
+  <meta name="theme-color" content="#061633">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <meta property="og:title" content="MyShiftPay Privacy Policy">
+  <meta property="og:image" content="https://myshiftpayapp.com/assets/og.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="container">
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="support.html">Support</a>
-    </nav>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="./"><img src="assets/apple-touch-icon.png" alt="" width="36" height="36">MyShiftPay</a>
+      <nav class="site-nav" aria-label="Main">
+        <a href="support.html">Support</a>
+        <a href="privacy.html" aria-current="page">Privacy</a>
+      </nav>
+    </div>
+  </header>
 
-    <div class="brand">My<span>Shift</span>Pay</div>
-    <h1>Privacy Policy</h1>
-    <p class="muted">Last updated: October 26, 2026</p>
-
-    <p>MyShiftPay is designed to help users track work shifts, hours, earnings, and related work information.</p>
+  <main>
+    <div class="page-title"><div class="wrap">
+      <h1>Privacy Policy</h1>
+      <p>Last updated: October 26, 2026</p>
+    </div></div>
+    <div class="wrap prose">
+      <p>MyShiftPay is designed to help users track work shifts, hours, earnings, and related work information.</p>
 
     <h2>Data Collection</h2>
     <p>MyShiftPay does not collect, sell, or share personal data. Information entered into the app, including work hours, pay rates, tips, extras, company and position names, is stored only on your device. The app does not automatically send this information to the developer or to anyone else. The app does not require an account.</p>
@@ -70,9 +54,19 @@
     <p>This Privacy Policy may be updated if the app's features or data practices change. The current version will be published on this page.</p>
 
     <h2>Contact</h2>
-    <p>For questions about this Privacy Policy, please contact <a href="mailto:shandarovich.va@gmail.com">shandarovich.va@gmail.com</a>.</p>
+    <p>For questions about this Privacy Policy, please contact <a href="mailto:support@myshiftpayapp.com">support@myshiftpayapp.com</a>.</p>
+    </div>
+  </main>
 
-    <footer>© 2026 MyShiftPay</footer>
-  </div>
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>© 2026 MyShiftPay</span>
+      <nav aria-label="Footer">
+        <a href="mailto:support@myshiftpayapp.com">support@myshiftpayapp.com</a>
+        <a href="support.html">Support</a>
+        <a href="privacy.html">Privacy Policy</a>
+      </nav>
+    </div>
+  </footer>
 </body>
 </html>

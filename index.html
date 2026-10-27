@@ -3,135 +3,150 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>MyShiftPay — Earnings Tracker for Movers</title>
-  <meta name="description" content="MyShiftPay helps movers track shifts, hours, tips, and extras — and send a clear weekly report.">
-  <style>
-    :root {
-      --bg: #0a1628;
-      --card: #121c2a;
-      --text: #eef2f7;
-      --muted: #9aa7ba;
-      --accent: #5aa2ff;
-      --accent-dark: #1565d8;
-      --border: #1e2a3a;
-    }
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.6;
-    }
-    .container { max-width: 900px; margin: 0 auto; padding: 0 20px; }
-    header {
-      padding: 60px 0 40px;
-      text-align: center;
-    }
-    .logo {
-      font-size: 42px;
-      font-weight: 800;
-      letter-spacing: -0.03em;
-      margin: 0 0 12px;
-    }
-    .logo span { color: var(--accent); }
-    .tagline {
-      font-size: 20px;
-      color: var(--muted);
-      margin: 0 0 32px;
-    }
-    .btn {
-      display: inline-block;
-      background: var(--accent-dark);
-      color: white;
-      text-decoration: none;
-      padding: 14px 28px;
-      border-radius: 12px;
-      font-weight: 600;
-      transition: background 0.2s;
-    }
-    .btn:hover { background: var(--accent); }
-    section { padding: 48px 0; }
-    h2 {
-      font-size: 28px;
-      margin: 0 0 16px;
-    }
-    .features {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 16px;
-      margin-top: 24px;
-    }
-    .card {
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: 16px;
-      padding: 24px;
-    }
-    .card h3 { margin: 0 0 8px; font-size: 18px; }
-    .card p { margin: 0; color: var(--muted); font-size: 15px; }
-    footer {
-      padding: 40px 0;
-      text-align: center;
-      color: var(--muted);
-      font-size: 14px;
-      border-top: 1px solid var(--border);
-    }
-    footer a { color: var(--accent); text-decoration: none; }
-    nav {
-      display: flex;
-      justify-content: center;
-      gap: 24px;
-      margin-top: 20px;
-    }
-    nav a { color: var(--muted); text-decoration: none; font-size: 15px; }
-    nav a:hover { color: var(--accent); }
-  </style>
+  <title>MyShiftPay — Pay tracker for movers</title>
+  <meta name="description" content="MyShiftPay is a pay tracker for movers. Log each shift with your rate, overtime and tips, and send your boss a clear weekly report. Free for iPhone.">
+  <meta name="theme-color" content="#061633">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://myshiftpayapp.com/">
+  <meta property="og:title" content="MyShiftPay — Pay tracker for movers">
+  <meta property="og:description" content="Log each shift with your rate, overtime and tips, and send your boss a clear weekly report.">
+  <meta property="og:image" content="https://myshiftpayapp.com/assets/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <div class="container">
-      <h1 class="logo">My<span>Shift</span>Pay</h1>
-      <p class="tagline">Track your shifts. See what you earned. Send a clear report.</p>
-      <span class="btn">Coming soon to the App Store</span>
-      <nav>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="./"><img src="assets/apple-touch-icon.png" alt="" width="36" height="36">MyShiftPay</a>
+      <nav class="site-nav" aria-label="Main">
         <a href="support.html">Support</a>
-        <a href="privacy.html">Privacy Policy</a>
+        <a href="privacy.html">Privacy</a>
       </nav>
     </div>
   </header>
 
-  <section>
-    <div class="container">
-      <h2>Built for movers</h2>
-      <p style="color: var(--muted); max-width: 600px;">MyShiftPay is a simple earnings tracker for movers and moving crews. Log your shifts, track tips and extras, and generate a clear weekly report you can send to your employer.</p>
-      <p style="color: var(--muted); max-width: 600px;">Free. No account. Your data stays on your iPhone.</p>
-
-      <div class="features">
-        <div class="card">
-          <h3>Track every shift</h3>
-          <p>Log hours, position, rate, overtime, tips, extras, and packing materials in seconds.</p>
+  <main>
+    <section class="hero">
+      <div class="wrap">
+        <div>
+          <h1>Know what you made this week.</h1>
+          <p class="lede">MyShiftPay is a pay tracker for movers. Log each shift with your rate, overtime and tips, and send your boss a clear weekly report.</p>
+          <div class="availability">
+            <span class="soon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+              Coming soon to the App Store
+            </span>
+            <span class="facts">Free for iPhone. No account needed.</span>
+          </div>
         </div>
-        <div class="card">
-          <h3>See your week</h3>
-          <p>See what you've earned so far this week, Monday to Sunday.</p>
-        </div>
-        <div class="card">
-          <h3>Work for more than one company</h3>
-          <p>Keep each company's positions, rates, and overtime rules separate, with totals per company or combined.</p>
-        </div>
-        <div class="card">
-          <h3>Send a clear report</h3>
-          <p>Copy or share a clean weekly summary with one tap.</p>
+        <div class="hero-phone phone">
+          <img src="assets/screens/home.webp" width="660" height="1434" alt="MyShiftPay home screen: this week so far, $1,917.25 for 49.25 hours, with earnings for each day from Monday to Saturday.">
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <footer>
-    <div class="container">
-      <p>© 2026 MyShiftPay</p>
-      <p><a href="support.html">Support</a> · <a href="privacy.html">Privacy Policy</a></p>
+    <section class="block chat-block">
+      <div class="wrap chat-layout">
+        <div>
+          <h2>Friday night. Dispatch wants your hours.</h2>
+          <p class="intro">Open the week and tap Share. Every day, rate, overtime hour and tip is spelled out, so there is nothing to argue about.</p>
+        </div>
+        <div class="chat" role="img" aria-label="A text conversation: dispatch asks for this week's hours, and the reply is a MyShiftPay weekly report for Sunrise Moving totaling $429.00 for 13 hours.">
+          <div class="who"><div class="avatar">D</div>Dispatch</div>
+          <div class="bubble in">Send me your hours for the week 👍</div>
+<pre class="bubble out">MyShiftPay — Oct 26 – Nov 1, 2026
+Company - Sunrise Moving
+
+10/28/2026
+Helper
+Rate - $22.00
+7 hours - $154.00
+Extra - $25.00
+Tips - $40.00
+Total - $219.00
+
+10/31/2026
+Driver
+Rate - $25.00
+6 hours - $150.00
+Tips - $60.00
+Total - $210.00
+
+WEEK SUMMARY
+Total Hours - 13
+Base Pay - $304.00
+Extra - $25.00
+Tips - $100.00
+Total Earnings - $429.00</pre>
+          <div class="status">Delivered</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="block">
+      <div class="wrap">
+        <h2>Log it on the truck. Check it any time.</h2>
+        <p class="intro">Adding a shift takes a few seconds, and the totals are always up to date.</p>
+        <ol class="steps">
+          <li>
+            <div class="phone"><img src="assets/screens/add.webp" width="660" height="1434" loading="lazy" alt="Add Work Day screen: Best Moving Co., Foreman-driver at $28 an hour, 10.25 hours with overtime after 8 hours, $120 in tips and $48.75 for packing materials. Total $487.25."></div>
+            <h3>Add your shift</h3>
+            <p>Pick the company and position, enter your hours, tips and extras. The total updates as you type.</p>
+          </li>
+          <li>
+            <div class="phone"><img src="assets/screens/week.webp" width="660" height="1434" loading="lazy" alt="Week Details for Best Moving Co.: $1,488.25 for 36.25 hours, with base pay, tips, packing materials and reviews."></div>
+            <h3>Watch your week add up</h3>
+            <p>Monday to Sunday, for one company or all of them together.</p>
+          </li>
+          <li>
+            <div class="phone"><img src="assets/screens/history.webp" width="660" height="1434" loading="lazy" alt="History for October 2026: five weeks with their hours and totals, from $1,267.25 to $1,917.25."></div>
+            <h3>Keep every week</h3>
+            <p>Go back to any month and open any week, down to each day.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="block">
+      <div class="wrap">
+        <h2>Built around how moving work pays</h2>
+        <dl class="details">
+          <div><dt>Overtime</dt><dd>Set the rule once, like after 8 hours at 1.5×, and every shift uses it.</dd></div>
+          <div><dt>Tips, extras and packing</dt><dd>Tips, extras, packing materials, reviews and other bonuses each get their own line.</dd></div>
+          <div><dt>More than one company</dt><dd>Each company keeps its own positions, rates and overtime rules.</dd></div>
+          <div><dt>Your positions and rates</dt><dd>Helper, driver, foreman, or your own titles, each with its own rate.</dd></div>
+          <div><dt>A Monday to Sunday week</dt><dd>Every week runs Monday to Sunday, so the totals are easy to check.</dd></div>
+          <div><dt>Copy or share</dt><dd>Paste the report into a text, or share it to any app on your iPhone.</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="promise">
+      <div class="wrap">
+        <div>
+          <h2>Your numbers stay on your iPhone.</h2>
+          <p>No account, no cloud, no ads and no tracking. Nothing leaves your phone unless you share it. <a href="privacy.html">Read the privacy policy</a></p>
+        </div>
+        <div>
+          <h2>Free to use.</h2>
+          <p>Everything you need to track your pay is free. Lifetime Pro is an optional one-time purchase that supports the developer.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>© 2026 MyShiftPay</span>
+      <nav aria-label="Footer">
+        <a href="mailto:support@myshiftpayapp.com">support@myshiftpayapp.com</a>
+        <a href="support.html">Support</a>
+        <a href="privacy.html">Privacy Policy</a>
+      </nav>
     </div>
   </footer>
 </body>
